@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C3A478FD24E38E290072DCDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A478FC24E38E290072DCDA /* AppDelegate.m */; };
 		C3A4790024E38E290072DCDA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A478FF24E38E290072DCDA /* SceneDelegate.m */; };
-		C3A4790324E38E290072DCDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4790224E38E290072DCDA /* ViewController.m */; };
 		C3A4790624E38E290072DCDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4790424E38E290072DCDA /* Main.storyboard */; };
 		C3A4790824E38E2A0072DCDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A4790724E38E2A0072DCDA /* Assets.xcassets */; };
 		C3A4790B24E38E2A0072DCDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4790924E38E2A0072DCDA /* LaunchScreen.storyboard */; };
@@ -22,8 +21,6 @@
 		C3A478FC24E38E290072DCDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C3A478FE24E38E290072DCDA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		C3A478FF24E38E290072DCDA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		C3A4790124E38E290072DCDA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C3A4790224E38E290072DCDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C3A4790524E38E290072DCDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3A4790724E38E2A0072DCDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3A4790A24E38E2A0072DCDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,19 +58,49 @@
 		C3A478FA24E38E290072DCDA /* Contacts Mrc */ = {
 			isa = PBXGroup;
 			children = (
+				C3A4791424E3908F0072DCDA /* Model */,
+				C3A4791824E390E10072DCDA /* Views */,
+				C3A4791624E390AE0072DCDA /* View Controllers */,
+				C3A4791724E390B60072DCDA /* Resources */,
+				C3A4790C24E38E2A0072DCDA /* Info.plist */,
+			);
+			path = "Contacts Mrc";
+			sourceTree = "<group>";
+		};
+		C3A4791424E3908F0072DCDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3A4791624E390AE0072DCDA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C3A4791724E390B60072DCDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4790724E38E2A0072DCDA /* Assets.xcassets */,
 				C3A478FB24E38E290072DCDA /* AppDelegate.h */,
 				C3A478FC24E38E290072DCDA /* AppDelegate.m */,
 				C3A478FE24E38E290072DCDA /* SceneDelegate.h */,
 				C3A478FF24E38E290072DCDA /* SceneDelegate.m */,
-				C3A4790124E38E290072DCDA /* ViewController.h */,
-				C3A4790224E38E290072DCDA /* ViewController.m */,
-				C3A4790424E38E290072DCDA /* Main.storyboard */,
-				C3A4790724E38E2A0072DCDA /* Assets.xcassets */,
-				C3A4790924E38E2A0072DCDA /* LaunchScreen.storyboard */,
-				C3A4790C24E38E2A0072DCDA /* Info.plist */,
 				C3A4790D24E38E2A0072DCDA /* main.m */,
 			);
-			path = "Contacts Mrc";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3A4791824E390E10072DCDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4790424E38E290072DCDA /* Main.storyboard */,
+				C3A4790924E38E2A0072DCDA /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +129,7 @@
 		C3A478F024E38E290072DCDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JMC;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Jarren Campos";
 				TargetAttributes = {
@@ -146,7 +174,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3A4790324E38E290072DCDA /* ViewController.m in Sources */,
 				C3A478FD24E38E290072DCDA /* AppDelegate.m in Sources */,
 				C3A4790E24E38E2A0072DCDA /* main.m in Sources */,
 				C3A4790024E38E290072DCDA /* SceneDelegate.m in Sources */,
